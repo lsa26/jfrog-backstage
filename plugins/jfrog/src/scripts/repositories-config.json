@@ -1,0 +1,1343 @@
+{
+   "repositories": [
+        {
+            "key": "docker-remote",
+            "packageType": "docker",
+            "rclass": "remote",
+            "url" : "https://registry-1.docker.io",
+            "description": "Remote repository for Docker packages",
+            "excludesPattern": "",
+            "includesPattern": "**/*",
+            "externalDependenciesEnabled": "false",
+            "xrayIndex": "true"
+        },
+        {
+            "key": "docker-local",
+            "packageType": "docker",
+            "rclass": "local",
+            "description": "Local repository for Docker packages",
+            "excludesPattern": "",
+            "includesPattern": "**/*",
+            "xrayIndex": "true"
+            
+        },
+        {
+            "key": "docker-federated",
+            "packageType": "docker",
+            "rclass": "federated",
+            "description": "Federated  repository for Docker packages",
+            "excludesPattern": "",
+            "includesPattern": "**/*",
+            "xrayIndex": "true"
+        },
+        {
+            "key": "docker-virtual",
+            "packageType": "docker",
+            "rclass": "virtual",
+            "description": "Virtual repository for Docker packages",
+            "excludesPattern": "",
+            "includesPattern": "**/*",
+            "xrayIndex": "true",
+            "externalDependenciesEnabled": "false",
+            "defaultDeploymentRepo": "docker-local",
+            "repositories": ["docker-local", "docker-remote","docker-federated"] 
+        },
+     {
+      "key": "npm-remote",
+      "packageType": "npm",
+      "rclass": "remote",
+      "url": "https://registry.npmjs.org",
+      "description": "Remote repository for NPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "npm-local",
+      "packageType": "npm",
+      "rclass": "local",
+      "description": "Local repository for NPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "npm-federated",
+      "packageType": "npm",
+      "rclass": "federated",
+      "description": "Federated repository for NPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "npm-virtual",
+      "packageType": "npm",
+      "rclass": "virtual",
+      "description": "Virtual repository for NPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "npm-local",
+      "repositories": ["npm-local", "npm-remote", "npm-federated"]
+    },
+    {
+      "key": "maven-remote",
+      "packageType": "maven",
+      "rclass": "remote",
+      "url": "https://repo1.maven.org/maven2/",
+      "description": "Remote repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "maven-local",
+      "packageType": "maven",
+      "rclass": "local",
+      "description": "Local repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "maven-federated",
+      "packageType": "maven",
+      "rclass": "federated",
+      "description": "Federated repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "maven-virtual",
+      "packageType": "maven",
+      "rclass": "virtual",
+      "description": "Virtual repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "maven-local",
+      "repositories": ["maven-local", "maven-remote", "maven-federated"]
+    },
+    {
+      "key": "pypi-remote",
+      "packageType": "pypi",
+      "rclass": "remote",
+      "url": "https://files.pythonhosted.org",
+      "description": "Remote repository for PyPi packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "pypi-local",
+      "packageType": "pypi",
+      "rclass": "local",
+      "description": "Local repository for PyPi packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "pypi-federated",
+      "packageType": "pypi",
+      "rclass": "federated",
+      "description": "Federated repository for PyPi packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "pypi-virtual",
+      "packageType": "pypi",
+      "rclass": "virtual",
+      "description": "Virtual repository for PyPi packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "pypi-local",
+      "repositories": ["pypi-local", "pypi-remote", "pypi-federated"]
+    },
+    {
+      "key": "huggingfaceml-remote",
+      "packageType": "huggingfaceml",
+      "rclass": "remote",
+      "url": "https://huggingface.co",
+      "description": "Remote repository for Hugging Face ML packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "huggingfaceml-local",
+      "packageType": "huggingfaceml",
+      "rclass": "local",
+      "description": "Local repository for Hugging Face ML packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "huggingfaceml-federated",
+      "packageType": "huggingfaceml",
+      "rclass": "federated",
+      "description": "Federated repository for Hugging Face ML packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+       {
+      "key": "gradle-remote",
+      "packageType": "gradle",
+      "rclass": "remote",
+      "url": "https://repo1.maven.org/maven2/",
+      "description": "Remote repository for Gradle packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gradle-local",
+      "packageType": "gradle",
+      "rclass": "local",
+      "description": "Local repository for Gradle packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gradle-federated",
+      "packageType": "gradle",
+      "rclass": "federated",
+      "description": "Federated repository for Gradle packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gradle-virtual",
+      "packageType": "gradle",
+      "rclass": "virtual",
+      "description": "Virtual repository for Gradle packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "gradle-local",
+      "repositories": ["gradle-local", "gradle-remote", "gradle-federated"]
+    },
+    {
+      "key": "go-remote",
+      "packageType": "go",
+      "rclass": "remote",
+      "url": "https://gocenter.io/",
+      "description": "Remote repository for Go packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "go-local",
+      "packageType": "go",
+      "rclass": "local",
+      "description": "Local repository for Go packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "go-federated",
+      "packageType": "go",
+      "rclass": "federated",
+      "description": "Federated repository for Go packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "go-virtual",
+      "packageType": "go",
+      "rclass": "virtual",
+      "description": "Virtual repository for Go packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "go-local",
+      "repositories": ["go-local", "go-remote", "go-federated"]
+    },
+    {
+      "key": "debian-remote",
+      "packageType": "debian",
+      "rclass": "remote",
+      "url": "http://archive.ubuntu.com/ubuntu/",
+      "description": "Remote repository for Debian packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "debian-local",
+      "packageType": "debian",
+      "rclass": "local",
+      "description": "Local repository for Debian packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "debian-federated",
+      "packageType": "debian",
+      "rclass": "federated",
+      "description": "Federated repository for Debian packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "debian-virtual",
+      "packageType": "debian",
+      "rclass": "virtual",
+      "description": "Virtual repository for Debian packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "debian-local",
+      "repositories": ["debian-local", "debian-remote", "debian-federated"]
+    },
+    {
+      "key": "rpm-remote",
+      "packageType": "rpm",
+      "rclass": "remote",
+      "url": "http://mirror.centos.org/centos/",
+      "description": "Remote repository for RPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "rpm-local",
+      "packageType": "rpm",
+      "rclass": "local",
+      "description": "Local repository for RPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "rpm-federated",
+      "packageType": "rpm",
+      "rclass": "federated",
+      "description": "Federated repository for RPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "rpm-virtual",
+      "packageType": "rpm",
+      "rclass": "virtual",
+      "description": "Virtual repository for RPM packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "rpm-local",
+      "repositories": ["rpm-local", "rpm-remote", "rpm-federated"]
+    },
+    {
+      "key": "swift-remote",
+      "packageType": "swift",
+      "rclass": "remote",
+      "url": "https://www.swift.org/",
+      "description": "Remote repository for Swift packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "swift-local",
+      "packageType": "swift",
+      "rclass": "local",
+      "description": "Local repository for Swift packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "swift-federated",
+      "packageType": "swift",
+      "rclass": "federated",
+      "description": "Federated repository for Swift packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "swift-virtual",
+      "packageType": "swift",
+      "rclass": "virtual",
+      "description": "Virtual repository for Swift packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "swift-local",
+      "repositories": ["swift-local", "swift-remote", "swift-federated"]
+    },
+    {
+      "key": "terraform-remote",
+      "packageType": "terraform",
+      "rclass": "remote",
+      "url": "https://registry.terraform.io/",
+      "description": "Remote repository for Terraform packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "terraform-local",
+      "packageType": "terraform",
+      "rclass": "local",
+      "description": "Local repository for Terraform packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "terraform-federated",
+      "packageType": "terraform",
+      "rclass": "federated",
+      "description": "Federated repository for Terraform packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "terraform-virtual",
+      "packageType": "terraform",
+      "rclass": "virtual",
+      "description": "Virtual repository for Terraform packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "terraform-local",
+      "repositories": ["terraform-local", "terraform-remote", "terraform-federated"]
+    },
+    {
+      "key": "terraformbackend-local",
+      "packageType": "terraformbackend",
+      "rclass": "local",
+      "description": "Local repository for Terraform backend packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "alpine-remote",
+      "packageType": "alpine",
+      "rclass": "remote",
+      "url": "http://dl-cdn.alpinelinux.org/alpine",
+      "description": "Remote repository for Alpine packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "alpine-local",
+      "packageType": "alpine",
+      "rclass": "local",
+      "description": "Local repository for Alpine packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "alpine-federated",
+      "packageType": "alpine",
+      "rclass": "federated",
+      "description": "Federated repository for Alpine packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "alpine-virtual",
+      "packageType": "alpine",
+      "rclass": "virtual",
+      "description": "Virtual repository for Alpine packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "alpine-local",
+      "repositories": ["alpine-local", "alpine-remote", "alpine-federated"]
+    },
+    {
+      "key": "ansible-remote",
+      "packageType": "ansible",
+      "rclass": "remote",
+      "url": "https://galaxy.ansible.com",
+      "description": "Remote repository for Ansible packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "ansible-local",
+      "packageType": "ansible",
+      "rclass": "local",
+      "description": "Local repository for Ansible packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "ansible-federated",
+      "packageType": "ansible",
+      "rclass": "federated",
+      "description": "Federated repository for Ansible packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "ansible-virtual",
+      "packageType": "ansible",
+      "rclass": "virtual",
+      "description": "Virtual repository for Ansible packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "ansible-local",
+      "repositories": ["ansible-local", "ansible-remote", "ansible-federated"]
+    },
+    {
+      "key": "bower-remote",
+      "packageType": "bower",
+      "rclass": "remote",
+      "url": "https://registry.bower.io",
+      "description": "Remote repository for Bower packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "bower-local",
+      "packageType": "bower",
+      "rclass": "local",
+      "description": "Local repository for Bower packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "bower-federated",
+      "packageType": "bower",
+      "rclass": "federated",
+      "description": "Federated repository for Bower packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "bower-virtual",
+      "packageType": "bower",
+      "rclass": "virtual",
+      "description": "Virtual repository for Bower packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "bower-local",
+      "repositories": ["bower-local", "bower-remote", "bower-federated"]
+    },
+    {
+      "key": "cargo-remote",
+      "packageType": "cargo",
+      "rclass": "remote",
+      "url": "https://index.crates.io/",
+      "description": "Remote repository for Cargo packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cargo-local",
+      "packageType": "cargo",
+      "rclass": "local",
+      "description": "Local repository for Cargo packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cargo-federated",
+      "packageType": "cargo",
+      "rclass": "federated",
+      "description": "Federated repository for Cargo packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "chef-remote",
+      "packageType": "chef",
+      "rclass": "remote",
+      "url": "https://supermarket.chef.io",
+      "description": "Remote repository for Chef packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "chef-local",
+      "packageType": "chef",
+      "rclass": "local",
+      "description": "Local repository for Chef packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "chef-federated",
+      "packageType": "chef",
+      "rclass": "federated",
+      "description": "Federated repository for Chef packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "chef-virtual",
+      "packageType": "chef",
+      "rclass": "virtual",
+      "description": "Virtual repository for Chef packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "chef-local",
+      "repositories": ["chef-local", "chef-remote", "chef-federated"]
+    },
+    {
+      "key": "cocoapods-remote",
+      "packageType": "cocoapods",
+      "rclass": "remote",
+      "url": "https://cdn.cocoapods.org",
+      "description": "Remote repository for Cocoapods packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cocoapods-local",
+      "packageType": "cocoapods",
+      "rclass": "local",
+      "description": "Local repository for Cocoapods packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cocoapods-federated",
+      "packageType": "cocoapods",
+      "rclass": "federated",
+      "description": "Federated repository for Cocoapods packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cocoapods-virtual",
+      "packageType": "cocoapods",
+      "rclass": "virtual",
+      "description": "Virtual repository for Cocoapods packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "cocoapods-local",
+      "repositories": ["cocoapods-local", "cocoapods-remote", "cocoapods-federated"]
+    },
+    {
+      "key": "conan-remote",
+      "packageType": "conan",
+      "rclass": "remote",
+      "url": "https://center.conan.io/",
+      "description": "Remote repository for Conan packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "conan-local",
+      "packageType": "conan",
+      "rclass": "local",
+      "description": "Local repository for Conan packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "conan-federated",
+      "packageType": "conan",
+      "rclass": "federated",
+      "description": "Federated repository for Conan packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "conan-virtual",
+      "packageType": "conan",
+      "rclass": "virtual",
+      "description": "Virtual repository for Conan packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "conan-local",
+      "repositories": ["conan-local", "conan-remote", "conan-federated"]
+    },
+    {
+      "key": "conda-remote",
+      "packageType": "conda",
+      "rclass": "remote",
+      "url": "https://repo.anaconda.com/pkgs/main",
+      "description": "Remote repository for Conda packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "conda-local",
+      "packageType": "conda",
+      "rclass": "local",
+      "description": "Local repository for Conda packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "conda-federated",
+      "packageType": "conda",
+      "rclass": "federated",
+      "description": "Federated repository for Conda packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "conda-virtual",
+      "packageType": "conda",
+      "rclass": "virtual",
+      "description": "Virtual repository for Conda packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "conda-local",
+      "repositories": ["conda-local", "conda-remote", "conda-federated"]
+    },
+    {
+      "key": "cran-remote",
+      "packageType": "cran",
+      "rclass": "remote",
+      "url": "https://cran.r-project.org/",
+      "description": "Remote repository for CRAN packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cran-local",
+      "packageType": "cran",
+      "rclass": "local",
+      "description": "Local repository for CRAN packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cran-federated",
+      "packageType": "cran",
+      "rclass": "federated",
+      "description": "Federated repository for CRAN packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "cran-virtual",
+      "packageType": "cran",
+      "rclass": "virtual",
+      "description": "Virtual repository for CRAN packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "cran-local",
+      "repositories": ["cran-local", "cran-remote", "cran-federated"]
+    },
+    {
+      "key": "oci-remote",
+      "packageType": "OCI",
+      "rclass": "remote",
+      "url": "https://registry-1.docker.io/",
+      "description": "Remote repository for OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "oci-local",
+      "packageType": "OCI",
+      "rclass": "local",
+      "description": "Local repository for OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "oci-federated",
+      "packageType": "OCI",
+      "rclass": "federated",
+      "description": "Federated repository for OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "oci-virtual",
+      "packageType": "OCI",
+      "rclass": "virtual",
+      "description": "Virtual repository for OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "oci-local",
+      "repositories": ["oci-local", "oci-remote", "oci-federated"]
+    },
+    {
+      "key": "gems-remote",
+      "packageType": "gems",
+      "rclass": "remote",
+      "url": "https://rubygems.org/",
+      "description": "Remote repository for Gems packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gems-local",
+      "packageType": "gems",
+      "rclass": "local",
+      "description": "Local repository for Gems packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gems-federated",
+      "packageType": "gems",
+      "rclass": "federated",
+      "description": "Federated repository for Gems packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gems-virtual",
+      "packageType": "gems",
+      "rclass": "virtual",
+      "description": "Virtual repository for Gems packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "gems-local",
+      "repositories": ["gems-local", "gems-remote", "gems-federated"]
+    },
+    {
+      "key": "gitlfs-remote",
+      "packageType": "gitlfs",
+      "rclass": "remote",
+      "url": "https://git-lfs.com/",
+      "description": "Remote repository for Git LFS packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gitlfs-local",
+      "packageType": "gitlfs",
+      "rclass": "local",
+      "description": "Local repository for Git LFS packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gitlfs-federated",
+      "packageType": "gitlfs",
+      "rclass": "federated",
+      "description": "Federated repository for Git LFS packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "gitlfs-virtual",
+      "packageType": "gitlfs",
+      "rclass": "virtual",
+      "description": "Virtual repository for Git LFS packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "gitlfs-local",
+      "repositories": ["gitlfs-local", "gitlfs-remote", "gitlfs-federated"]
+    },
+    {
+      "key": "helm-remote",
+      "packageType": "helm",
+      "rclass": "remote",
+      "url": "https://registry-1.docker.io/",
+      "description": "Remote repository for Helm OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "helm-local",
+      "packageType": "helm",
+      "rclass": "local",
+      "description": "Local repository for Helm OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "helm-federated",
+      "packageType": "helm",
+      "rclass": "federated",
+      "description": "Federated repository for Helm OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "helm-virtual",
+      "packageType": "helm",
+      "rclass": "virtual",
+      "description": "Virtual repository for Helm OCI packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "helm-local",
+      "repositories": ["helm-local", "helm-remote", "helm-federated"]
+    },
+    {
+      "key": "ivy-remote",
+      "packageType": "ivy",
+      "rclass": "remote",
+      "url": "https://repo.maven.apache.org/maven2/",
+      "description": "Remote repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "externalDependenciesEnabled": "false",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "ivy-local",
+      "packageType": "ivy",
+      "rclass": "local",
+      "description": "Local repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "ivy-federated",
+      "packageType": "ivy",
+      "rclass": "federated",
+      "description": "Federated repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true"
+    },
+    {
+      "key": "ivy-virtual",
+      "packageType": "ivy",
+      "rclass": "virtual",
+      "description": "Virtual repository for Maven packages",
+      "excludesPattern": "",
+      "includesPattern": "**/*",
+      "xrayIndex": "true",
+      "externalDependenciesEnabled": "false",
+      "defaultDeploymentRepo": "ivy-local",
+      "repositories": ["maven-local", "maven-remote", "maven-federated"]
+    },
+    {
+    "key": "nuget-remote",
+    "packageType": "NuGet",
+    "rclass": "remote",
+    "url": "https://www.nuget.org/",
+    "description": "Remote repository for NuGet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true",
+    "downloadContextPath": "api/v2/package"
+},
+{
+    "key": "nuget-local",
+    "packageType": "NuGet",
+    "rclass": "local",
+    "description": "Local repository for NuGet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "nuget-federated",
+    "packageType": "NuGet",
+    "rclass": "federated",
+    "description": "Federated repository for NuGet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "nuget-virtual",
+    "packageType": "NuGet",
+    "rclass": "virtual",
+    "description": "Virtual repository for NuGet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "defaultDeploymentRepo": "nuget-local",
+    "repositories": ["nuget-local", "nuget-remote", "nuget-federated"]
+},
+{
+    "key": "opkg-remote",
+    "packageType": "opkg",
+    "rclass": "remote",
+    "url": "https://openwrt.org/",
+    "description": "Remote repository for OPKG packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "opkg-local",
+    "packageType": "opkg",
+    "rclass": "local",
+    "description": "Local repository for OPKG packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "opkg-federated",
+    "packageType": "opkg",
+    "rclass": "federated",
+    "description": "Federated repository for OPKG packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "composer-remote",
+    "packageType": "composer",
+    "rclass": "remote",
+    "url": "https://packagist.org/",
+    "description": "Remote repository for Composer packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "composer-local",
+    "packageType": "composer",
+    "rclass": "local",
+    "description": "Local repository for Composer packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "composer-federated",
+    "packageType": "composer",
+    "rclass": "federated",
+    "description": "Federated repository for Composer packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "composer-virtual",
+    "packageType": "composer",
+    "rclass": "virtual",
+    "description": "Virtual repository for Composer packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "defaultDeploymentRepo": "composer-local",
+    "repositories": ["composer-local", "composer-remote", "composer-federated"]
+},
+{
+    "key": "p2-remote",
+    "packageType": "p2",
+    "rclass": "remote",
+    "url": "https://eclipsesource.com/",
+    "description": "Remote repository for P2 packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "p2-virtual",
+    "packageType": "p2",
+    "rclass": "virtual",
+    "description": "Virtual repository for P2 packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "repositories": ["p2-remote"]
+},
+{
+    "key": "pub-remote",
+    "packageType": "pub",
+    "rclass": "remote",
+    "url": "https://pub.dartlang.org/",
+    "description": "Remote repository for Pub packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "pub-local",
+    "packageType": "pub",
+    "rclass": "local",
+    "description": "Local repository for Pub packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "pub-federated",
+    "packageType": "pub",
+    "rclass": "federated",
+    "description": "Federated repository for Pub packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "pub-virtual",
+    "packageType": "pub",
+    "rclass": "virtual",
+    "description": "Virtual repository for Pub packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "defaultDeploymentRepo": "pub-local",
+    "repositories": ["pub-local", "pub-remote", "pub-federated"]
+},
+{
+    "key": "puppet-remote",
+    "packageType": "puppet",
+    "rclass": "remote",
+    "url": "https://forgeapi.puppetlabs.com/",
+    "description": "Remote repository for Puppet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "puppet-local",
+    "packageType": "puppet",
+    "rclass": "local",
+    "description": "Local repository for Puppet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "puppet-federated",
+    "packageType": "puppet",
+    "rclass": "federated",
+    "description": "Federated repository for Puppet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "puppet-virtual",
+    "packageType": "puppet",
+    "rclass": "virtual",
+    "description": "Virtual repository for Puppet packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "defaultDeploymentRepo": "puppet-local",
+    "repositories": ["puppet-local", "puppet-remote", "puppet-federated"]
+},
+{
+    "key": "sbt-remote",
+    "packageType": "sbt",
+    "rclass": "remote",
+    "url": "https://repo1.maven.org/maven2/",
+    "description": "Remote repository for SBT packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "sbt-local",
+    "packageType": "sbt",
+    "rclass": "local",
+    "description": "Local repository for SBT packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "sbt-federated",
+    "packageType": "sbt",
+    "rclass": "federated",
+    "description": "Federated repository for SBT packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "sbt-virtual",
+    "packageType": "sbt",
+    "rclass": "virtual",
+    "description": "Virtual repository for SBT packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "defaultDeploymentRepo": "sbt-local",
+    "repositories": ["sbt-local", "sbt-remote", "sbt-federated"]
+},
+{
+    "key": "vcs-remote",
+    "packageType": "vcs",
+    "rclass": "remote",
+    "url": "https://github.com/",
+    "description": "Remote repository for VCS packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "generic-remote",
+    "packageType": "generic",
+    "rclass": "remote",
+    "url": "https://jfrog.com/",
+    "description": "Remote repository for Generic packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "externalDependenciesEnabled": "false",
+    "xrayIndex": "true"
+},
+{
+    "key": "generic-local",
+    "packageType": "generic",
+    "rclass": "local",
+    "description": "Local repository for Generic packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "generic-federated",
+    "packageType": "generic",
+    "rclass": "federated",
+    "description": "Federated repository for Generic packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "generic-virtual",
+    "packageType": "generic",
+    "rclass": "virtual",
+    "description": "Virtual repository for Generic packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true",
+    "externalDependenciesEnabled": "false",
+    "defaultDeploymentRepo": "rpm-local",
+    "repositories": ["generic-local", "generic-remote", "generic-federated"]
+},
+{
+    "key": "vagrant-local",
+    "packageType": "vagrant",
+    "rclass": "local",
+    "description": "Local repository for Vagrant packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+},
+{
+    "key": "vagrant-federated",
+    "packageType": "vagrant",
+    "rclass": "federated",
+    "description": "Federated repository for Vagrant packages",
+    "excludesPattern": "",
+    "includesPattern": "**/*",
+    "xrayIndex": "true"
+}		
+   ]  
+}
+

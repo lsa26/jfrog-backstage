@@ -1,0 +1,47 @@
+/* ExampleComponent.module.css */
+
+.page {
+  background-color: #e0f7fa; /* Light green background */
+  min-height: 100vh;        /* Full height */
+  padding: 20px;            /* Padding */
+}
+
+.header {
+  color: #007f33;           /* Dark green text */
+}
+
+.supportButton {
+  color: #ffffff;            /* White text */
+  padding: 10px 20px;        /* Padding */
+  border: none;              /* No border */
+  border-radius: 4px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor */
+}
+
+.supportButton:hover {
+  
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center;
+  text-align: center;
+  height: 125px; /* Control the card height */
+  padding: 15px; /* Reduced padding for better compactness */
+}
+
+.cardTitle {
+  margin-bottom: 10px; /* Smaller space below the title */
+}
+
+.cardDescription {
+  margin: 15px 0; /* Smaller space between description and title */
+}
+
+.cardButton {
+  margin-top: 15px; /* Reduced space above the button */
+}
+
+
